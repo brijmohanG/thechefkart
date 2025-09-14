@@ -162,7 +162,7 @@ export const DishList = () => {
             </div>
             <div>
                 {showIngredient ? <IngredientCard text={ingredientItem} isAdded={selectItem} onAddItem={onAddItem}
-                    onRemoveItem={onRemoveItem} /> : <h1>Ingredient Not Found</h1>}
+                    onRemoveItem={onRemoveItem} /> : null}
             </div>
         </div>
     )
