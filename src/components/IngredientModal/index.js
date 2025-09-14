@@ -24,7 +24,7 @@ export const IngredientModel = () => {
                     <p>{ingredient.description}</p>
                 </div>
                 <div>
-                    <img src={ingredient.image} alt={ingredient.name} />
+                    <img src={ingredient.image} alt={ingredient.name} style={{ marginLeft: "20px"}}/>
                 </div>
             </div>
             <div>
