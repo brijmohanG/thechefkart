@@ -19,7 +19,7 @@ export const IngredientCard = ({text, isAdded, onAddItem, onRemoveItem}) => {
     }
     return (
         <div className='ingredient-card-bg-container'>
-            <div>
+            <div className='ingredient-card-image-container'>
                 <img src={text.image} className='ingredient-card-image' alt={text.name} />
             </div>
             <div className='ingredient-card-heading-add-button-container'>
