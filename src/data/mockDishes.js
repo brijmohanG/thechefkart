@@ -17,8 +17,24 @@ export const data = [
   "nameHi": "",
   "nameBn": "",
   "id": 1,
-  "name": "Tandoori Chicken"
+  "name": "Tandoori Chicken",
+  "ingredients": [
+    { "name": "Chicken", "quantity": "1 kg" },
+    { "name": "Yogurt", "quantity": "1 cup" },
+    { "name": "Lemon juice", "quantity": "2 tablespoons" },
+    { "name": "Ginger garlic paste", "quantity": "2 tablespoons" },
+    { "name": "Red chili powder", "quantity": "1 tablespoon" },
+    { "name": "Turmeric powder", "quantity": "1 teaspoon" },
+    { "name": "Garam masala", "quantity": "1 teaspoon" },
+    { "name": "Salt", "quantity": "to taste" },
+    { "name": "Mustard oil", "quantity": "2 tablespoons" },
+    { "name": "Coriander powder", "quantity": "1 teaspoon" },
+    { "name": "Cumin powder", "quantity": "1 teaspoon" },
+    { "name": "Tandoori masala", "quantity": "1 tablespoon" },
+    { "name": "Fresh coriander", "quantity": "for garnish" }
+  ]
 }
+
 ,
  {
  "categoryId": 1,

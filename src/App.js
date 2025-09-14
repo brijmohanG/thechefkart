@@ -1,10 +1,16 @@
-import {DishList} from './components/DishList'
+import { DishList } from './components/DishList'
+import { IngredientModel } from './components/IngredientModal'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div>
-      <DishList/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<DishList />} />
+        <Route path="/ingredient" element={<IngredientModel />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

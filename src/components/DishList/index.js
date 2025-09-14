@@ -3,6 +3,7 @@ import { data } from "../../data/mockDishes"
 import { DishCard } from "../DishCard"
 import { IngredientCard } from "../IngredientCard"
 import { CiSearch } from "react-icons/ci";
+import { useNavigate } from 'react-router-dom';
 import './index.css';
 
 export const DishList = () => {
@@ -114,6 +115,15 @@ export const DishList = () => {
         }
     };
 
+    const navigate = useNavigate();
+    const onShowIngredient = (text) => {
+
+        navigate('/ingredient',  {
+      state: {ingredient: text}
+    });
+    };
+
+
     return (
         <div className="bg-container">
             <div onClick={removeIngredientBlur}>
@@ -162,7 +172,7 @@ export const DishList = () => {
             </div>
             <div>
                 {showIngredient ? <IngredientCard text={ingredientItem} isAdded={selectItem} onAddItem={onAddItem}
-                    onRemoveItem={onRemoveItem} /> : null}
+                    onRemoveItem={onRemoveItem} onShowIngredient={onShowIngredient} /> : null}
             </div>
         </div>
     )

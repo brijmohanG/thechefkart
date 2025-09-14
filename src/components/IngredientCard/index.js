@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 
-export const IngredientCard = ({text, isAdded, onAddItem, onRemoveItem}) => {
+export const IngredientCard = ({text, isAdded, onAddItem, onRemoveItem, onShowIngredient}) => {
     const [selected, setSelected] = useState(false);
 
     const typeClass = text.type === "VEG" ? "card-veg-button" : "card-non-veg-button";
@@ -17,8 +17,11 @@ export const IngredientCard = ({text, isAdded, onAddItem, onRemoveItem}) => {
         onRemoveItem(text.id);
         setSelected(false);
     }
+    const showIngredient = () => {
+        onShowIngredient(text)
+    }
     return (
-        <div className='ingredient-card-bg-container'>
+        <div className='ingredient-card-bg-container' onClick={showIngredient}>
             <div className='ingredient-card-image-container'>
                 <img src={text.image} className='ingredient-card-image' alt={text.name} />
             </div>
