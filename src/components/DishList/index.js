@@ -165,7 +165,7 @@ export const DishList = () => {
                                         onClickIngredient={onClickIngredient}
                                     />
                                 ))
-                                : <h1> No Dish found</h1>
+                                : <h1 style={{ textAlign: "center", marginTop: "60px" }}> No Dish found</h1>
                         }
                     </div>
                 </div>
