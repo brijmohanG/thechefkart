@@ -1,0 +1,114 @@
+
+.card-bg-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  overflow: hidden;
+  word-wrap: break-word; 
+}
+
+.card-left-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.card-heading-container{
+    display: flex;
+    align-items: center;
+}
+.card-main-heading{
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.card-veg-button {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* space between dot and text */
+  background-color: #ffffff;
+  border: 1px solid #539A64;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #539A64;
+  padding: 2px 6px;
+  height: 20px;
+  cursor: pointer; /* or pointer if clickable */
+}
+.card-non-veg-button {
+  display: flex;
+  align-items: center;
+  gap: 4px; /* space between dot and text */
+  background-color: #ffffff;
+  border: 1px solid #E2574C;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #E2574C;
+  padding: 2px 6px;
+  height: 20px;
+  cursor: pointer; /* or pointer if clickable */
+}
+.card-non-veg-dot{
+  width: 6px;
+  height: 6px;
+  background-color: #E2574C;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.card-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #539A64;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.card-paragraph{
+    width: 160px;
+    color: #7E7E7E;
+    font-size: 15px;
+    margin-top: -0.0001px; 
+    text-align: left;
+}
+.ingredient-container{
+    display: flex;
+    align-items: center;
+    color: #FF8800;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.add-button-container{
+    margin-top: -20px;
+}
+
+.add-item-button{
+    background-color: #ffffff;
+    color: #73AE78;
+    width: 70px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+
+}
+.remove{
+    color: #FF8800;
+    width: 80px;
+}
+.card-image-container{
+    height: 100px;
+    width: 120px;
+}
+.card-image{
+    height: 100px;
+    width: 120px;
+    border-radius: 8px;
+}

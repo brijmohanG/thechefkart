@@ -1,0 +1,137 @@
+.bg-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    background-color: #ffffff;
+    width: 100vw;
+}
+
+
+
+.content-container{
+    margin-top: 150px;
+}
+
+
+.headder-container{
+    position: fixed;
+    background-color: #ffffff;
+    background-size: cover;
+    top: 0;
+    padding-top: 20px;
+    width: 98vw;
+    
+}
+.blur{
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+
+.search-dish-container {
+  border: 2px solid #ADADAD;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.search-input{
+    border-style: none ;
+    
+    outline: none;
+}
+.search-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+.search-button{
+    border-style: none;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+.category-button-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-button{
+    border: 2px solid #ADADAD;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.active{
+    background-color: #FF941A;
+    color: #ffffff;
+}
+
+.selector-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.veg-button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.veg-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 2px solid #539A64;
+    padding: 8px 9px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.non-veg-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 2px solid #E2574C;
+    padding: 8px 9px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.veg-dot{
+  width: 10px;
+  height: 10px;
+  background-color: #539A64; /* Veg color */
+  border-radius: 50%;       /* Makes it a circle */
+  display: inline-block;
+}
+.non-veg-dot{
+    width: 10px;
+  height: 10px;
+  background-color: #E2574C; /* Veg color */
+  border-radius: 50%;       /* Makes it a circle */
+  display: inline-block;
+}
+
+@media screen and (min-width: 720px) {
+    .content-container{
+        display: flex;
+        flex-wrap: wrap; /* Allows wrapping to next line */
+        gap: 50px; /* Optional: spacing between cards */
+    }
+}
+
+
